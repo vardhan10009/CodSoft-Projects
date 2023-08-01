@@ -1,0 +1,142 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLINE CALCULATOR</title>
+    <link rel="stylesheet" href="C:\Users\91766\OneDrive\Desktop\CODSOFT PROJECT\cal.css">
+    </head>
+    <style>
+
+    body {
+
+    background-repeat: no-repeat;
+    height: 550px;
+    background-image: linear-gradient(to bottom right, rgb(86, 54, 54), black);
+    }  
+
+  .container {
+    width: 270px;
+    height: 430px;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid ;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px rgb(34, 36, 37) ;
+    background-color: rgb(34, 36, 37);
+  }
+
+  #Screen {
+    width: 270px;
+    border: 1px solid ;
+    border-radius: 3px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-size: 200%;
+  }
+
+  input {
+    width: 50px;
+    color: black;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 10px;
+     margin-left: 12px;
+    font-size: 25px;
+    height: 50px;
+    box-shadow: 1px 1px 1px 1px white;
+   
+  }
+
+  #clear {
+    width: 180px;
+    border: 3px solid white;
+    border-radius: 3px;
+    padding: 5px;
+    height: 40px;
+    background-color: green;
+    margin-left: 17%;
+   
+  }
+
+  .ip input:hover, #clear:hover , #oprt:hover{
+      background-color: blue;
+      cursor: pointer;
+     
+  }
+
+  #oprt {
+    background-color: green;
+    box-shadow: 1px 1px 1px 1px green;
+  }
+
+
+    </style>
+ </head>
+  
+ <body>
+    
+     
+    <body>
+     
+      <div class="container">
+
+        <form name="form1">
+         
+          <input id="Screen" type="text" name="answer" /> 
+          <br>
+          <br>
+
+
+          <div class="ip">
+    
+          <input type="button" value="1" onclick="form1.answer.value += '1' " />
+          <input type="button" value="2" onclick="form1.answer.value += '2' " />
+          <input type="button" value="3" onclick="form1.answer.value += '3' " />
+          <input id="oprt" type="button" value="+" onclick="form1.answer.value += '+' " />
+           
+          <br>
+          <br>
+          
+          <input type="button" value="4" onclick="form1.answer.value += '4' " />
+          <input type="button" value="5" onclick="form1.answer.value += '5' " />
+          <input type="button" value="6" onclick="form1.answer.value += '6' " />
+          <input id="oprt" type="button" value="-" onclick="form1.answer.value += '-' " />
+
+          <br />
+          <br />
+  
+          <input type="button" value="7" onclick="form1.answer.value += '7' " />
+          <input type="button" value="8" onclick="form1.answer.value += '8' " />
+          <input type="button" value="9" onclick="form1.answer.value += '9' " />
+          <input id="oprt" type="button" value="*" onclick="form1.answer.value += '*' " />
+
+          <br />
+          <br />
+  
+          <input type="button" value="." onclick="form1.answer.value += '.' " />
+          <input type="button" value="0" onclick="form1.answer.value += '0' " />
+          <input id="oprt" type="button" value="/" onclick="form1.answer.value += '/' " />
+           
+          <input id="oprt" type="button" value="=" onclick="form1.answer.value = 
+          eval(form1.answer.value)"/>
+
+          <br>
+          <br>
+
+          <input  type="button" value=" Clear All"onclick="form1.answer.value = ' ' " id="clear"/>
+        
+          <br>
+        </form>
+      </div>
+
+
+      </div>
+    </body>
+    
+ </body>
+ </html>
